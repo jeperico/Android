@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
 }
 
 main{
@@ -38,9 +38,11 @@ main{
 }
 
 main p {
+    margin: 15px 0px ;   
     text-align: justify;
     text-indent: 3em;
     font: normal normal 1em var(--fonte-padrao);
+    line-height: 1.8em;
 }
 
 main h1{
@@ -49,12 +51,23 @@ main h1{
     margin-bottom: 6px;
 }
 
+main h2{
+    font: normal normal 1.7em var(--fonte-android);
+    text-indent: 1em;
+    background-image: linear-gradient(to right, var(--cor2), white);
+}
 
+main strong {
+    color: var(--cor5);
+}
 
+#divideo{
+    background-color: var(--cor5);
+}
 
-
-
-
+iframe{
+    margin: 20px 30px;
+}
 
 
 
@@ -69,7 +82,7 @@ main h1{
 header{
     height: 100%;
     text-align: center;
-    background-image: linear-gradient(to top, var(--cor5), var(--cor3), var(--cor2));
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
     color: white;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -82,7 +95,7 @@ header > h1 {
 }
 
 header > p {
-    font: normal normal 0.9em var(--fonte-padrao);
+    font: normal normal 1.2em var(--fonte-padrao);
     margin: auto;
     max-width: 500px;
     padding-top: 20px;
@@ -92,7 +105,7 @@ header > p {
 .nav{
     padding: 15px;
     text-decoration: none;
-    color: white;
+    color: var(--cor2);
     font-weight: bold;
 }
 
@@ -109,4 +122,6 @@ nav{
 .nav:hover{
     background-color: var(--cor3);
     border-radius: 5px;
+    color: var(--cor5);
+    transition-duration: 0.7s;
 }
