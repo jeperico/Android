@@ -31,6 +31,7 @@ header{
     padding-top: 80px;
     padding-bottom: 60px;
     box-shadow: 0px 0px 23px black;
+    min-width: 500px;
 }
 
 header > h1 {
@@ -61,7 +62,6 @@ nav ul{
 nav{
     margin-top: -35px;
     margin-bottom: 35px;
-    min-width: 500px;
 }
 
 .nav:hover{
@@ -185,6 +185,7 @@ main ul {
 }
 
 footer {
+    min-width: 500px;
     background-color: var(--cor4);
     color: white;
     text-align: center;
