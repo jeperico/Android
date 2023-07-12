@@ -25,7 +25,6 @@
 }
 
 header{
-    height: 100%;
     text-align: center;
     background-image: linear-gradient(to top, var(--cor5), var(--cor3));
     color: white;
@@ -43,9 +42,13 @@ header > h1 {
 header > p {
     font: normal normal 1.2em var(--fonte-padrao);
     margin: auto;
-    max-width: 500px;
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
 }
 
 .nav{
@@ -55,14 +58,10 @@ header > p {
     font-weight: bold;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-}
-
 nav{
     margin-top: -35px;
     margin-bottom: 35px;
+    min-width: 500px;
 }
 
 .nav:hover{
@@ -78,13 +77,14 @@ body {
 
 main{
     background-color: white;
-    min-height:500px ;
+    min-width: 500px;
     max-width: 1000px;
     margin: auto;
     margin-top: -18px;
     padding: 20px;
     padding-top: 20px;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.275);
+    border-radius: 0px 0px 15px 15px;
 }
 
 main p {
@@ -122,16 +122,24 @@ main a {
     border-radius: 6px;
     text-decoration: none;
     color: var(--cor5);
-    font-weight: bold;
+    font-weight: bold
 }
+
+img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+#homi{
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
+
 main a:hover{
     background-color: var(--cor3);
     transition-duration: 0.2s;
     transition-delay: 0.2s;
-}
-
-picture{
-    
 }
 
 #divideo{
@@ -148,4 +156,42 @@ iframe{
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+h3 {
+    padding: 8px;
+    color: white;
+    background-color: var(--cor3);
+    border-radius: 10px 10px 0px 0px;
+    font: normal normal 1.5em var(--fonte-padrao);
+    text-indent: 0.2em;
+}
+
+aside{
+    border-radius: 10px;
+}
+
+#tabela {
+    background-color: var(--cor1);
+    margin-top: -3px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 3px 10px 10px 10px;
+}
+
+main ul {
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    padding: 7px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
 }
